@@ -5,7 +5,7 @@
 chamb_type = 'ellip' # other options would be 'rect' and 'polyg'/'polyg_cython'
 
 x_aper = 2.300000e-02		# horizontal semiaxis of the chamber [m]
-y_aper = 2.300000e-02		# vertical semiaxis of the chamber [m]
+y_aper = 1.800000e-02		# vertical semiaxis of the chamber [m]
 
 
 track_method= 'BorisMultipole'  # Tracking method for PIC.
