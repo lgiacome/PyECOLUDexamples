@@ -9,6 +9,6 @@ E.g. assuming that you have cloned into the folder /home/gianni/pytools:
    export PYTHONPATH:$PYTHONPATH:/home/gianni/pytools/
 
 # Clone the example on your computer
-git clone https://github.com/lgiacome/PyECOLUDexamples
+```git clone https://github.com/lgiacome/PyECOLUDexamples
 
 
