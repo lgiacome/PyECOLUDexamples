@@ -1,8 +1,3 @@
-import sys, os
-BIN = os.path.expanduser("../../PySTUFF")
-sys.path.append(BIN)
-
-
 from PyECLOUD.buildup_simulation import BuildupSimulation
 
 # Build the simulation object
