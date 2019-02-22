@@ -35,5 +35,9 @@ run 001_plot_main_output.py
 Some description of the code input and output are provided in [PyECLOUD manual](https://raw.githubusercontent.com/PyCOMPLETE/PyECLOUD/master/doc/reference/reference.pdf). Input is defined in input files, but the same parameters can be passed also as keywords argument when building the BuildupSim object.
 
 More advanced examples can be found in:
+
 https://github.com/PyCOMPLETE/PyECLOUD/tree/master/other
+
+https://github.com/PyCOMPLETE/PyECLOUD/tree/master/testing/test_buildup
+
 
