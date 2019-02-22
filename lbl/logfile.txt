@@ -1,0 +1,7 @@
+PyECLOUD Version 7.6.1
+git hash: acca3d3ceffab173aefbdab12b66537554941063
+git branch: master
+Simulation started on 21 Feb 2019 15:11:29
+Initialization finished on 21 Feb 2019 15:11:44
+21 Feb 2019 15:11:44 pass. 0/36, cloud=default: Nel_tot=1.999971e+08 N_mp=42000
+21 Feb 2019 15:11:50 pass. 1/36, cloud=default: Nel_tot=2.344500e+08 N_mp=59081

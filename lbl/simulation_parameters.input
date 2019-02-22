@@ -1,0 +1,70 @@
+# SIMULATION PARAMETERS
+# in this file it is possible to specify the simulations parameters
+
+# names of the input parameters
+machine_param_file='machine_parameters.input'
+secondary_emission_parameters_file='secondary_emission_parameters.input'
+beam_parameters_file='beam.beam' 
+
+logfile_path = './logfile.txt'		# path to a text file containing a
+					# basic info about the ongoing simulation
+progress_path = './progress.txt'	# path to a file containing the simulation
+					# progress in percent
+stopfile = 'stop'			
+
+Dt = 2.500000e-11			# simulation time step [s]
+t_end=1e-9;       			# extra time interval after the beam profile [s]
+					# (no effect if log. profile is imported from file)
+
+import numpy as np
+dec_fact_out = int(np.round(5 * 25e-12/Dt))	# output is saved only every n-th time step
+lam_th=1.e2        # when the beam density is below this value, primary electrons are not generated
+		   # and beam forces on the electrons are neglected [e-/m]
+Dx_hist=1.e-3      # lower boubd of the horizontal histogram [m]
+r_center=1.e-3     # radius of a circle around (0,0) for the calculation of the central density [m]
+
+flag_hist_impact_seg = 0 		# only available when chamber is a polygon
+
+Dt_En_hist = 25e-9 			# time step for the energy spectrum of the impacting electrons
+Nbin_En_hist= 250			# number of bins for the energy histograms
+En_hist_max= 5000.  			# maximum energy in the energy spectrum histogram [eV]
+
+t_ion=100.;        			#s
+
+N_mp_max=250000;   			# size of allocated vectors 
+
+# regeneration parameters
+N_mp_regen = 200000; 			# apply regeneration when MP number is higher than this
+N_mp_regen_low = 5000;			# apply regeneration when MP number is higher than this 	
+N_mp_after_regen=10000;			# number of MPs after regeneration
+t_ON_regen_low=10.			# don't apply regenerations before this time
+fact_split=1.5;				# MP split factor
+fact_clean=1e-6;			# MP clean factor
+regen_hist_cut = 1.e-4			# threshold value for phase space density below which no
+					# electrons are regenerated
+	
+N_mp_soft_regen = 60000			# soft regeneration threshold
+N_mp_after_soft_regen = 20000		# number of MPs after soft regeneration
+
+nel_mp_ref_0= 2e8/(0.7*N_mp_soft_regen)   # Initial MP size [e-/m]	
+
+
+# Number of bins
+Nx_regen=51;				# it must be odd!
+Ny_regen=51;				# it must be odd!
+Nvx_regen=51;				# it must be odd!
+Nvy_regen=101;				# it must be odd!
+Nvz_regen=51;				# it must be odd!
+
+
+#Sp_ch params
+Dt_sc = .5e-9 				# time step for update of the electron space charge field map [s]
+Dh_sc = .3e-3				# grid size for the space charge PIC solver [m]
+t_sc_ON=0e-9;				# [s]		
+sparse_solver = 'klu'			# sparse linear system solver, can be klu or scipy_slu 	
+
+
+flag_movie = 0             		# save file with electron density distribution at each sc eval: 1/0 
+flag_sc_movie = 0          		# save file with sc electric field distribution at each sc eval: 1/0
+
+save_mp_state_time_file =  -1           # list of instants at which MP positions and velocities are saved on file

@@ -1,0 +1,24 @@
+# secondary emission model 
+# in this file it is possible to specify the secondary emission parameters
+Emax=332.;		# energy for which the SEY curve attains a maximum [eV]
+del_max = 1.700000	# maximum of the SEY curve
+R0 = 0.7		# R0 parameter for the elastic SEY curve
+switch_model=0		# use the model from ECLOUD
+	
+# hilleret model for sec. emission
+E_th=35.;
+sigmafit =1.0828;
+mufit = 1.6636;
+
+switch_no_increase_energy=0 	# check that the energy of the emitted electrons
+				# is not higher then the enery of the impacting
+				# electrons
+thresh_low_energy=-1		# maximum energy for which the energy check is 
+				# performed (dummy value)
+
+scrub_en_th=20.			# minimum energy of the scrubbing electrons [eV]		
+
+
+secondary_angle_distribution = 'cosine_3D'	# distribution of the angle between 
+						# velocity of the emitted electrons 
+						# and surface normal

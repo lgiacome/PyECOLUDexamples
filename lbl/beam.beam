@@ -1,0 +1,30 @@
+# BEAM PARAMETERS
+# in this file it is possible to specify the parameters which characterize the beam
+
+energy_eV = 4.500000e+11		# energy of the beam [eV]
+nemittx = 2.500000e-06			# normalized emittance in x direction [m]
+nemitty = nemittx   			# normalized emittance in y direction [m]
+Dp_p = 0.000000e+00			# momentum spread of the beam
+
+
+beam_field_file = 'computeFD'		# compute the beam field using a Finite
+					# Differences poisson solver
+Dh_beam_field = 0.0001                  # grid size for the FD poisson solver [m]
+
+b_spac   = 25e-9     # Bunch spacing [s] (to be specified also if you load the 
+		     # profile from file - it is used as period for clean and save)
+
+fact_beam = 2.500000e+11		# rescaling factor applied to the beam profile
+coast_dens = 0. 			# protons per meter 
+
+flag_bunched_beam = 1 			# 1: bunched beam 0:load profile from file  
+
+# to be filled in case of bunched beam
+sigmaz = 1.000000e-09/4.*299792458.     # std. dev of the longitudinal gaussian distrib
+t_offs = 2.5e-9				# delay in the longitudinal profile (i.e.) mean
+					# of the longitudinal gaussian distribution 	
+filling_pattern_file = 1*(30*[1.]+5*[0])	# beam profile as an array of zeros and ones
+						
+
+# to be filled in case of longitudinal profile from file
+beam_long_prof_file = -1
