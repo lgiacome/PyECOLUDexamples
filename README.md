@@ -22,4 +22,13 @@ cd /home/giadarol/Desktop/test_with_lorenzo/PyECOLUDexamples/scripts
 python 000_run_simulation.py
 ```
 
+## Plot some of the simulation output
+Open ipython in interactive matplotlib mode:
+```
+ipython --pylab
+```
+In ipython:
+```
+run 001_plot_main_output.py
+```
 
