@@ -1,5 +1,5 @@
 import sys, os
-BIN = os.path.expanduser("../../")
+BIN = os.path.expanduser("../../PySTUFF")
 sys.path.append(BIN)
 
 
