@@ -16,4 +16,10 @@ export PYTHONPATH:$PYTHONPATH:/home/gianni/pytools/
 git clone https://github.com/lgiacome/PyECOLUDexamples
 ```
 
+## Run the example
+```
+cd /home/giadarol/Desktop/test_with_lorenzo/PyECOLUDexamples/scripts
+python 000_run_simulation.py
+```
+
 
