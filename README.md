@@ -2,6 +2,7 @@
 
 ## Setup PyECLOUD
 Follow instructions here: https://github.com/PyCOMPLETE/PyECLOUD/wiki/How-to-install-PyECLOUD
+For this example only the part related to buildup simulations is reuqired.
 
 ## Set your pythonpath
 To run the example you should have the folder containing PyECLOUD, PyPIC and PyKLU in your PYTHONPATH.
